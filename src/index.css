@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-primary: #5D3E1A; /* Premium Chocolate Brown / Rust theme */
+  --color-brand-accent: #c2612a; /* Warm Baked Amber / Rust Orange from image */
+}
+
+/* Custom extra-smooth scroll and scrollbars representing premium craft */
+html {
+  scroll-behavior: smooth;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  font-size: 14px; /* Scales rem-based units nicely to 14px base */
+}
+
+body {
+  font-size: 14px;
+  background-color: #F5EFE6;
+}
+
+/* Ensure paragraph descriptions under headings and key body details are 14px throughout the site */
+p {
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+}
+
+/* Elegant scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #fcfbfa;
+}
+::-webkit-scrollbar-thumb {
+  background: #e7dfd5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d5c8b7;
+}
+
+/* Gentle keyframe fade in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Shimmer effect for B2B status tracking */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-bg {
+  background: linear-gradient(90s, #f5f0eb 25%, #ede4db 50%, #f5f0eb 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}

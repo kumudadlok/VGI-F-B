@@ -1,0 +1,6 @@
+{
+  "name": "Cakie and Cookie Bakers",
+  "description": "Artisanal website for Cakie & Cookie Bakers featuring customizable online ordering, a bespoke custom cake inquiry form, dynamic portfolios gallery, customer reviews, payment gateway billing, and real-time order delivery status tracking with slide-out notifications.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
